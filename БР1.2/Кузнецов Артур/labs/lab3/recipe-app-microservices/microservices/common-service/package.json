@@ -2,7 +2,8 @@
   "name": "common-service",
   "version": "1.0.0",
   "description": "lab3-common-service",
-  "main": "app.ts",
+  "main": "dist/app.js",
+  "types": "dist/types/app.d.ts",
   "scripts": {
     "build": "npx tsc",
     "start": "node dist/app.js",

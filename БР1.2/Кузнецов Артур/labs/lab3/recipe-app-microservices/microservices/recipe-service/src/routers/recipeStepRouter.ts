@@ -6,7 +6,7 @@ import {
     getRecipeSteps,
     updateRecipeStep,
 } from '../controllers/recipeStepController';
-import { authMiddleware } from 'common-service/src/middleware/authMiddleware';
+import { authMiddleware } from 'common-service';
 
 const router = Router();
 

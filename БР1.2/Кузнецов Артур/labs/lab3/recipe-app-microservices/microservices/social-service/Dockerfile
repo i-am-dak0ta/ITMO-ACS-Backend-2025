@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY social-service/package*.json ./
 COPY social-service/tsconfig.json ./
-COPY auth-service/.env ./
+COPY social-service/.env ./
 COPY common-service ./common-service
 
 RUN npm install

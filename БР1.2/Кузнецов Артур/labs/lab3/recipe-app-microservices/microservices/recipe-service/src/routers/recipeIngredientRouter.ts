@@ -6,7 +6,7 @@ import {
     getRecipeIngredients,
     updateRecipeIngredient,
 } from '../controllers/recipeIngredientController';
-import { authMiddleware } from 'common-service/src/middleware/authMiddleware';
+import { authMiddleware } from 'common-service';
 
 const router = Router();
 

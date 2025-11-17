@@ -8,8 +8,8 @@ import {
     getLikesByUser,
     getOwnLikes,
 } from '../controllers/likeController';
-import { authMiddleware } from 'common-service/src/middleware/authMiddleware';
-import { adminOnlyMiddleware } from 'common-service/src/middleware/adminOnlyMiddleware';
+import { authMiddleware } from 'common-service';
+import { adminOnlyMiddleware } from 'common-service';
 
 const router = Router();
 

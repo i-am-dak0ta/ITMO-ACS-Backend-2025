@@ -22,7 +22,7 @@ const authMiddleware = (req, res, next) => {
         next();
     }
     catch (e) {
-        res.status(401).json({ message: 'Unauthorized' });
+        res.status(401).json({ message: 'Invalid token' });
     }
 };
 exports.authMiddleware = authMiddleware;

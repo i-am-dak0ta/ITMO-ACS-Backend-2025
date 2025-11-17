@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { authMiddleware } from 'common-service/src/middleware/authMiddleware';
-import { adminOnlyMiddleware } from 'common-service/src/middleware/adminOnlyMiddleware';
+import { authMiddleware } from 'common-service';
+import { adminOnlyMiddleware } from 'common-service';
 import {
     createSubscription,
     deleteSubscription,

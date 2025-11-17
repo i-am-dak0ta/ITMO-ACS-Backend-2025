@@ -3,7 +3,7 @@ import { AppDataSource } from '../config/database';
 import { RecipeIngredient } from '../models/RecipeIngredient';
 import { Recipe } from '../models/Recipe';
 import { Ingredient } from '../models/Ingredient';
-import { AuthRequest } from 'common-service/src/middleware/authMiddleware';
+import { AuthRequest } from 'common-service';
 
 const recipeIngredientRepository = AppDataSource.getRepository(RecipeIngredient);
 const recipeRepository = AppDataSource.getRepository(Recipe);

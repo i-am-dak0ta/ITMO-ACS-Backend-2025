@@ -6,7 +6,7 @@ import {
     getSavedRecipes,
     updateSavedRecipe,
 } from '../controllers/savedRecipeController';
-import { authMiddleware } from 'common-service/src/middleware/authMiddleware';
+import { authMiddleware } from 'common-service';
 
 const router = Router();
 

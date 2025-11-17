@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY recipe-service/package*.json ./
 COPY recipe-service/tsconfig.json ./
-COPY auth-service/.env ./
+COPY recipe-service/.env ./
 COPY common-service ./common-service
 
 RUN npm install

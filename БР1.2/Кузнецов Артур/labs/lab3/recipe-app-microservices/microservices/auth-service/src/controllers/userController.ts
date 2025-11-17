@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { User } from '../models/User';
 import { AppDataSource } from '../config/database';
-import { AuthRequest } from 'common-service/src/middleware/authMiddleware';
+import { AuthRequest } from 'common-service';
 import { Role } from '../models/Role';
 import hashPassword from '../utils/hashPassword';
 

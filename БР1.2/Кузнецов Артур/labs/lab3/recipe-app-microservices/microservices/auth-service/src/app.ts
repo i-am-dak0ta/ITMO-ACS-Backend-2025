@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import express, { Request, Response } from 'express';
+import cors from 'cors';
 import { AppDataSource } from './config/database';
 import userRouter from './routers/userRouter';
 import authRouter from './routers/authRouter';
@@ -8,12 +9,14 @@ import { initializeRoles } from './services/initRoleService';
 import swaggerJsdoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
 import { swaggerOptions } from './swagger';
-import { errorHandler } from 'common-service/src/middleware/errorHandler';
+import { errorHandler } from 'common-service';
 
 const app = express();
 const PORT = 3000;
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
 app.use(express.json());
+app.use(cors());
+app.options('*', cors());
 
 const handler = (_request: Request, response: Response) => {
     response.status(200).send({

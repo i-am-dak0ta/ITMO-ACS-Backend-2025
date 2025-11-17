@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { AppDataSource } from '../config/database';
 import { DishType } from '../models/DishType';
-import { AuthRequest } from 'common-service/src/middleware/authMiddleware';
+import { AuthRequest } from 'common-service';
 
 const dishTypeRepository = AppDataSource.getRepository(DishType);
 

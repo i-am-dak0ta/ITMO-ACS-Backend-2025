@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { AppDataSource } from '../config/database';
 import { RecipeStep } from '../models/RecipeStep';
 import { Recipe } from '../models/Recipe';
-import { AuthRequest } from 'common-service/src/middleware/authMiddleware';
+import { AuthRequest } from 'common-service';
 
 const recipeStepRepository = AppDataSource.getRepository(RecipeStep);
 const recipeRepository = AppDataSource.getRepository(Recipe);
